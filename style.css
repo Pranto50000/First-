@@ -37,14 +37,15 @@ a{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 255px;
+    padding-top: 200px;
     padding-left: 20px;
 }
 .hero p{
     width: 400px;
+    padding-top: 72px;
 }
 .btn button{
-    margin-top: 51px;
+    margin-top: -29px;
     font-size: 38px;
     width: 250px;
     height: 63px;
@@ -58,48 +59,124 @@ a{
 .col-6 img{
     margin-left: 30px;
 }
+.wrapper{
+    display: flex;
+}
+p{
+    margin-bottom: 0%;
+}
+
+
+
+
+
+
+ 
+ .typing::before {
+     content: '';
+     position: absolute;
+     top: 0;
+     right: 0;
+     width: 2px;
+     height: 100%;
+     background: #606b70;
+     animation: cursorBlink 0.8s steps(3) infinite
+ }
+
+ @keyframes cursorBlink {
+
+     0%,
+     75% {
+         opacity: 1
+     }
+
+     76%,
+     100% {
+         opacity: 0
+     }
+ }
+
+ .typing {
+     position: relative;
+     /* -webkit-box-reflect: below 1px linear-gradient(transparent, #3333) */
+ }
+
+ .typing h2 {
+     position: relative;
+     color: black;
+     font-weight: 700;
+     letter-spacing: 5px;
+     padding-left: 20px;
+     padding-top: 7px;
+     font-size: 58px;
+     overflow: hidden;
+     margin-bottom: 0;
+     animation: type 5s steps(11) infinite
+ }
+
+ @keyframes type {
+
+     0%,
+     100% {
+         width: 0px
+     }
+
+     30%,
+     60% {
+         width: 394.09px
+     }
+ }
+
+ @media(max-width: 330px) {
+     .typing h2 {
+         font-size: 3rem;
+         animation: type 5s steps(10) infinite
+     }
+
+     @keyframes type {
+
+         0%,
+         100% {
+             width: 0px
+         }
+
+         30%,
+         60% {
+             width: 305px
+         }
+     }
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* animation */
 .wrapper {
     display: inline-flex;
 }
 .wrapper .static-txt{
-    color: red;
-    font-size: 40px;
-    font-weight: 400;
+    color: rgb(255, 0, 0);
+    padding-top: 10px;
+    font-size: 50px;
+    font-weight: 700;
 
 }
-.wrapper .dynamuc-txts {
-    margin-left: 15px;
-}
-.dynamuc-txts li{
-    list-style: none;
-    font-size: 40px;
-    font-weight: 500;
-    color: rgb(240, 67, 240);
-}
-.dynamuc-txts li span{
-    position: relative;
-}
-.dynamuc-txts li span::after{
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background: #D8B4B6;
-    left: 0;
-    border-left: 2px solid rgb(240, 67, 240);
-    animation: typing 3s steps(21) infinite;
-}
-@keyframes typing {
-    100%{
-        left: 100%;
-        margin: 0 -35px 0 35px;
-    }
-    
-}
+
 .sc{
     height: 53px;
-    background-color: rgb(109, 109, 190);
+    background-color: rgb(103, 101, 248);
     text-align: center;
 
 }
@@ -107,6 +184,21 @@ a{
     font-size: 30px;
     color: white;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* card */
 .card{
     padding: 10px;
